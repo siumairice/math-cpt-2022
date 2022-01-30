@@ -1,7 +1,3 @@
-
-
-
-
 //calculator
 let num1 = document.getElementById("quantity1")
 num1.addEventListener("input", ()=>{
