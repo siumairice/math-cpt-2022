@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math CPT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&amp;family=Luxurious+Roman&amp;family=Quicksand:wght@300&amp;family=Varela+Round&amp;display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navigation-bar">
+        MATH CPT 2022
+    </div>
+    <div id="main-content">
+        <div class="container">
+            <h1>Calculator</h1>
+            <p>Welcome to the Basic Arithmetic Calculator!</p>
+            <input type="number" id="quantity1" name="quantity1" placeholder="First Number">
+            <select name="operation" id="operation" placeholder ="operation">
+              <option value="addition">+</option>
+              <option value="subtraction">-</option>
+              <option value="multiplication">x</option>
+              <option value="division">÷</option>
+              <option value="exponent">^</option>
+            </select>
+            <input type="number" id="quantity2" name="quantity2" placeholder="Second Number">
+            <div class="term-number">
+                <p>Your total is: </p>
+                <h1 id ="result">0</h1>
+            </div>
+            <button id="calculate">CALCULATE</button>
+        </div>
+        <div class="container">
+            <h1>Fibonacci</h1>
+            <p>Welcome to the Fibonacci Generator!</p>
+            <div class="term-number">
+                <p>The <span id="demo"></span>th term is: </p>
+                <h1 id ="fibonacci-number">1</h1>
+            </div>
+            <div class="term-number" id="test">
+                <p>Fibonacci Series: </p>
+                <p id="fibonacci-series">1</p>
+            </div>
+            <div class="slidecontainer">
+                <label for="slider">Term:</label>
+                <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+            </div>
+            <button id="randomizer">
+                RANDOMIZER
+            </button>
+        </div>
+        <div class="container">
+            <h1>Pascal's Triangle</h1>
+            <p>Welcome to the Pascal's Triangle Generator!</p>
+            <div class="term-number" id = "tri-test">
+                <p id = "pascal-triangle">1</p>
+            </div>
+            <div class="slidecontainer">
+                <p>Number of Rows: <span id="triangle-value">1</span> </p>
+                <input type="range" min="0" max="100" value="0" class="slider" id="triangleRange">
+            </div>
+            
+            <button id="triangle-randomizer">
+                RANDOMIZER
+            </button>
+        </div>
+        </div>  
+        <footer class="footer">
+            By Nicole
+        <footer>
+    <script src="script.js"></script>
+</body>
+</html>
