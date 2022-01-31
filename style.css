@@ -109,6 +109,10 @@ a:hover{
     
 }
 
+#fibonacci-number{
+    overflow: hidden;
+}
+
 #calculator-container, #pascal-triangle-container{
     overflow: auto;
 }
