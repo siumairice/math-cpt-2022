@@ -6,13 +6,13 @@
 
 body{
    padding: 0px; 
-   background-color: rgb(129, 162, 224);
+   background-color: rgb(26, 24, 24);
 }
 .navigation-bar, .footer{
     background-color: rgb(26, 24, 24);
     color: white;
     padding: 20px;
-    
+    width: 100%;
 }
 
 h1{
@@ -22,10 +22,11 @@ h1{
 #quantity1, #quantity2, #operation{
     margin: 20px 0px;
     height: 40px;
-    font-size: 18px;
+    font-size: 2vh;
+    text-align: center;
 }
 #quantity1, #quantity2{
-    width: 150px;
+    width: 40%;
 }
 
 
@@ -44,15 +45,40 @@ button:hover{
 .navigation-bar{
     margin-bottom: 30px;
     font-size: 36px;
-    width: 100%;
     box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    position: fixed;
 }
 
+@media screen and (max-width: 1350px) { 
+    #main-content{
+        flex-direction: column;
+        overflow: auto;
+        
+    }
+    .container{
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 800px) { 
+    .container{
+        max-width: 200px;
+    }
+}
+
+
 #main-content{
+    background-color:rgb(129, 162, 224);
     display: flex;
+    flex-direction: wrap;
     gap: 20px;
     margin: 0px;
     justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 15vh;
+    padding-bottom: 7vh;
 }
 
 .container{
@@ -63,6 +89,8 @@ button:hover{
     height: 60vh;
     width: 25%;
     border-radius: 15px;
+    min-width: 360px;
+    
 }
 
 #calculator-container, #pascal-triangle-container{
@@ -72,7 +100,6 @@ button:hover{
     position: fixed;
     left: 0px;
     bottom: 0px;
-    width: 100%;
     text-align: center;
 }
 
