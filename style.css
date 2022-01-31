@@ -13,6 +13,7 @@ body{
     color: white;
     padding: 20px;
     width: 100%;
+    
 }
 
 h1{
@@ -27,6 +28,10 @@ h1{
 }
 #quantity1, #quantity2{
     width: 40%;
+}
+
+.logo{
+    height: 5vh;
 }
 
 
@@ -49,6 +54,17 @@ button:hover{
     top: 0px;
     left: 0px;
     position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(237, 241, 250);
+}
+a:hover{
+    opacity: 70%;
 }
 
 @media screen and (max-width: 1350px) { 
